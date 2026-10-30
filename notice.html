@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>流程处理 - 非生产物料供货通知单</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;color:#111;background:#f3f3f3}
+.topbar{height:69px;background:#fff;border-top:1px solid #111;border-bottom:1px solid #e5e5e5;display:flex;align-items:flex-start;padding:12px 18px;gap:9px}
+.logo{width:40px;height:40px;border-radius:50%;background:#0878dc;color:#fff;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:bold}
+.heading{font-size:13px;line-height:20px;white-space:nowrap}
+.tag{display:inline-block;margin-left:8px;color:#555;font-size:14px}
+.tab{position:absolute;top:45px;left:59px;color:#1685e8;font-size:12px;height:24px;border-bottom:2px solid #1685e8;padding:0 7px}
+.page{margin:29px 3.4% 0;background:#fff;min-height:407px;padding:7px 0 0;box-shadow:0 1px 8px #ddd}
+.greeting{width:calc(100% - 336px);margin:0 auto 9px;font-size:13px}
+.intro{width:calc(100% - 336px);margin:0 auto 5px;font-size:13px}
+.sheet{width:calc(100% - 336px);margin:0 auto;border-collapse:collapse;table-layout:fixed;background:white;font-size:12px;text-align:center}
+.sheet td{border:1px solid #111;height:28px;padding:3px 4px;line-height:16px;overflow-wrap:anywhere}
+.sheet .title{height:28px;font-size:14px;font-weight:normal}
+.sheet .company{height:27px;font-size:14px}
+.sheet .blue{color:#0645ad}
+.sheet .bold{font-weight:bold}
+.sheet .itemhead td{height:34px}
+.sheet .item td{height:35px}
+.sheet .foot td{height:29px;text-align:left}
+@media(max-width:900px){
+ .page{margin:20px 12px;padding:10px;overflow-x:auto}
+ .greeting,.intro,.sheet{width:970px;margin-left:0}
+ .topbar{padding-left:12px}
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="logo">↪</div>
+  <div class="heading">流程处理 - 非生产物料供货通知单 <span class="tag">♢</span></div>
+</header>
+<div class="tab">流程表单</div>
+<main class="page">
+  <div class="greeting">您好!</div>
+  <div class="intro">供应商打印此供货通知入库</div>
+  <table class="sheet" aria-label="非生产物料供货通知单">
+    <colgroup>
+      <col style="width:3.3%"><col style="width:12%"><col style="width:8.3%">
+      <col style="width:13.4%"><col style="width:17.5%"><col style="width:8.9%">
+      <col style="width:10.2%"><col style="width:12.7%"><col style="width:6.6%"><col style="width:7.1%">
+    </colgroup>
+    <tr><td class="company" colspan="10">柳州五菱汽车工业有限公司</td></tr>
+    <tr><td class="title" colspan="10">非生产物料供货通知单</td></tr>
+    <tr>
+      <td colspan="2">工厂代码</td><td colspan="2" class="blue">2010</td>
+      <td colspan="2">供货日期</td><td colspan="2" class="blue">2026-11-29</td><td rowspan="3" colspan="2" style="text-align:left;font-weight:bold">SAP号：</td>
+    </tr>
+    <tr>
+      <td colspan="2">成本中心</td><td colspan="2" class="blue">LZ20301101</td>
+      <td colspan="2">预算科目</td><td colspan="2" class="blue">6601120003</td>
+    </tr>
+    <tr>
+      <td colspan="2">交货地址</td><td colspan="2" class="blue">柳东03库 L308</td>
+      <td colspan="2">OA编号</td><td colspan="2" class="blue">LA1771-2026</td>
+    </tr>
+    <tr>
+      <td>收货人</td><td class="blue">吕柳艳</td><td>收货人电话</td><td class="blue">15289630549</td>
+      <td>收货部门</td><td class="blue">柳东基地</td><td>合同编号</td><td colspan="2" class="blue">LC-MRO20262217</td>
+    </tr>
+    <tr style="height:28px"><td colspan="10"></td></tr>
+    <tr class="itemhead">
+      <td>序号</td><td>物料编码</td><td>物料名称/服务描述</td><td>物料长描述</td>
+      <td>规格型号</td><td>品牌/制造商</td><td>单位</td><td>订单数量</td><td>送货数量</td><td>净价</td>
+    </tr>
+    <tr class="item">
+      <td>1</td><td></td><td></td><td>执行器</td>
+      <td style="text-align:left">120 50/60HZ 15VA M7284C1000；<br>输入电压AC220V</td>
+      <td>霍尼韦尔<br>Honeywell</td><td class="blue">PC</td>
+      <td>1.00</td><td>1.00</td><td>3938.00</td>
+    </tr>
+    <tr>
+      <td colspan="2">供应商名称</td><td colspan="4" class="blue">广西辰驰电力设备有限公司</td>
+      <td colspan="2">供应商代码</td><td colspan="2" class="blue">S-00000097</td>
+    </tr>
+    <tr>
+      <td colspan="2">供应商联系人</td><td class="blue">孟德杰</td><td colspan="2">供应商联系电话</td>
+      <td class="blue">18577622425</td><td colspan="2">采购工程师</td><td colspan="2" class="blue">覃继坚</td>
+    </tr>
+    <tr class="foot"><td colspan="10">此订单物料统一配送至申请人入库。结算方式： K042 票到次月6个月汇票付款</td></tr>
+  </table>
+</main>
+</body>
+</html>
